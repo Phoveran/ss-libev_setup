@@ -3,4 +3,5 @@
 需要在root用户下使用
 
 sudo chmod +x sssetup.sh
+
 sudo ./sssetup.sh
