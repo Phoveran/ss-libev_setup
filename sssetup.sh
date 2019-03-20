@@ -8,7 +8,7 @@ echo -e "请指定端口（推荐10000-20000间整数）：\c"
 read ssport
 echo -e "请输入密码：\c"
 read sskey
-echo -e "请输入加密方式：\c"
+echo -e "请输入加密方式：(推荐chacha20-ietf-poly1305)\c"
 read ssmethod
 #安装依赖文件
 apt update
