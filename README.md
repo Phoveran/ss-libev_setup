@@ -4,4 +4,4 @@
 
 复制以下代码，服务器运行即可
 
-wget https://raw.githubusercontent.com/Phoveran/ss-libev_setup/master/sssetup.sh && chmod +x sssetup.sh && ./sssetup.sh
+wget -P ~ https://raw.githubusercontent.com/Phoveran/ss-libev_setup/master/sssetup.sh && chmod +x ~/sssetup.sh && ~/sssetup.sh
