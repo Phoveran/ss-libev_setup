@@ -8,8 +8,10 @@ echo -e "请指定端口（推荐10000-20000间整数）：\c"
 read ssport
 echo -e "请输入密码：\c"
 read sskey
+echo -e "请输入加密方式：\c"
+read ssmethod
 #安装依赖文件
-apt update -y
+apt update
 apt upgrade -y
 apt-get install --no-install-recommends gettext build-essential autoconf libtool libpcre3-dev asciidoc xmlto libev-dev libc-ares-dev automake libmbedtls-dev libsodium-dev -y
 apt install git -y
@@ -48,4 +50,4 @@ echo "net.core.default_qdisc=fq" >> /etc/sysctl.conf
 echo "net.ipv4.tcp_congestion_control=bbr" >> /etc/sysctl.conf
 sysctl -p
 #开启shadowsocks
-screen -dmS ss ss-server -p $ssport -k $sskey -m chacha20-ietf-poly1305
+screen -dmS ss ss-server -p $ssport -k $sskey -m $ssmethod
