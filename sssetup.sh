@@ -43,6 +43,7 @@ git submodule update --init --recursive
 ./autogen.sh && ./configure && make
 make install
 cd ~
+rm -r ~/*
 #开启bbr
 modprobe tcp_bbr
 echo "tcp_bbr" >> /etc/modules-load.d/modules.conf
