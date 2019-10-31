@@ -1,8 +1,8 @@
 #!/bin/bash
-echo -e "******************************\n"
-echo -e "****Author:   Phoveran   *****\n"
-echo -e "****Mail:phoveran@126.com*****\n"
-echo -e "******************************\n"
+echo -e "*************************************\n"
+echo -e "****Author:       Phoveran      *****\n"
+echo -e "****Mail:dauntlessstan@gmail.com*****\n"
+echo -e "*************************************\n"
 #读取用户需求
 echo -e "请指定端口（推荐10000-20000间整数）：\c"
 read ssport
